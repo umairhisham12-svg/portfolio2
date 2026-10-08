@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Alex Rivera, a web developer who builds clean, responsive websites."
+    />
+    <title>Alex Rivera | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="logo" href="#home">Alex Rivera</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Available for new projects</p>
+            <h1>Hi, I'm <span class="accent">Alex Rivera</span></h1>
+            <p class="role">Web Developer</p>
+            <p class="lead">
+              I create clean, responsive and user-friendly websites using
+              modern web technologies.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="profile-frame">
+              <img src="umair02.jpeg" alt="Profile photo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">A short introduction</p>
+
+          <div class="about-grid reveal">
+            <div class="about-media">
+              <svg
+                class="about-photo"
+                viewBox="0 0 400 480"
+                role="img"
+                aria-label="Portrait placeholder of Alex Rivera"
+              >
+                <title>Portrait placeholder</title>
+                <defs>
+                  <linearGradient id="aboutGlow" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#0ea5e9" />
+                    <stop offset="100%" stop-color="#7c3aed" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="480" rx="28" fill="#1e293b" />
+                <circle cx="200" cy="176" r="72" fill="url(#aboutGlow)" />
+                <path
+                  d="M70 430c24-90 78-136 130-136s106 46 130 136"
+                  fill="url(#aboutGlow)"
+                  opacity="0.8"
+                />
+              </svg>
+            </div>
+
+            <div class="about-copy">
+              <p>
+                Hello! I'm a web developer who enjoys turning ideas into simple,
+                well-structured websites. I focus on clear layouts, accessible
+                markup, and code that is easy to maintain.
+              </p>
+              <p>
+                Replace this paragraph with your own story: what you build, what
+                you are learning, and the kind of work you want to do next.
+              </p>
+
+              <div class="about-details">
+                <article>
+                  <h3>Education</h3>
+                  <p>B.S. in Computer Science — Your University (2022)</p>
+                </article>
+                <article>
+                  <h3>Interests</h3>
+                  <p>UI design, accessibility, open source, and coffee-fueled side projects.</p>
+                </article>
+              </div>
+
+              <a class="btn btn-primary" href="#contact">Download CV</a>
+              <p class="hint">Replace this button's link with your CV file when you have one.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Tools I use to build on the web</p>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>HTML</h3>
+              <p>Semantic structure, forms, and accessible page layouts.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>CSS</h3>
+              <p>Flexbox, Grid, variables, and responsive visual design.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>JavaScript</h3>
+              <p>DOM updates, form validation, and interactive UI behavior.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Responsive Design</h3>
+              <p>Layouts that stay readable on phones, tablets, and desktops.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Git</h3>
+              <p>Version control for tracking changes and collaborating safely.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>GitHub</h3>
+              <p>Hosting code, sharing projects, and documenting work.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Placeholder work you can swap out later</p>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-image project-image-one" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Weather Dashboard</h3>
+                <p>
+                  A clean dashboard that shows current conditions and a 5-day
+                  forecast for a searched city.
+                </p>
+                <p class="tech">HTML · CSS · JavaScript</p>
+                <div class="project-actions">
+                  <a class="btn btn-primary" href="#projects">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image project-image-two" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Task Tracker</h3>
+                <p>
+                  A simple task list with add, complete, and filter actions
+                  stored in the browser.
+                </p>
+                <p class="tech">HTML · CSS · JavaScript</p>
+                <div class="project-actions">
+                  <a class="btn btn-primary" href="#projects">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image project-image-three" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Portfolio Template</h3>
+                <p>
+                  A personal site layout with a dark theme, project cards, and a
+                  working contact form.
+                </p>
+                <p class="tech">HTML · CSS · JavaScript</p>
+                <div class="project-actions">
+                  <a class="btn btn-primary" href="#home">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Send a message or reach out directly</p>
+
+          <div class="contact-grid">
+            <form class="contact-form reveal" id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                />
+                <p class="field-error" id="name-error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <p class="field-error" id="email-error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  minlength="10"
+                ></textarea>
+                <p class="field-error" id="message-error" role="alert"></p>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <p class="form-success" id="form-success" hidden>
+                Thanks! Your message looks good. Replace this form with a backend
+                or email service when you are ready.
+              </p>
+            </form>
+
+            <aside class="contact-info reveal">
+              <h3>Details</h3>
+              <ul>
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </li>
+                <li>
+                  <span>Location</span>
+                  <p>Your City, Your Country</p>
+                </li>
+                <li>
+                  <span>GitHub</span>
+                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
+                </li>
+                <li>
+                  <span>LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Alex Rivera. All Rights Reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <a href="mailto:hello@example.com">Email</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
